@@ -12,21 +12,31 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Daily Yourghuts"
+        android:text="Lexxy pastry"
         android:gravity="center"
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="#F7FBFF"
         android:background="@drawable/shape"
         android:layout_marginBottom="10dp"
-
          />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsername"
+        android:text="Welcome!"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign up"
         android:backgroundTint="#E318E6"
         android:textSize="20sp"
+        android:id="@+id/signup"
 
 
         />
@@ -36,6 +46,7 @@
         android:text="Sign In"
         android:backgroundTint="#18D5E6"
         android:textSize="20sp"
+        android:id="@+id/signin"
 
 
         />
