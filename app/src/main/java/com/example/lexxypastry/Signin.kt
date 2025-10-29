@@ -25,14 +25,14 @@ class Signin : AppCompatActivity() {
 
 
         signButton.setOnClickListener {
-            val api =
-                "https://Arnold254.pythonanywhere.com/api/signin"
+            val api = "https://Arnold254.pythonanywhere.com/api/signin"
             val data = RequestParams()
             data.put("email", email.text.toString().trim())
             data.put("password",password.text.toString())
 
 
             val helper = ApiHelper(applicationContext)
+            helper.post_login(api,data)
 
         }
     }

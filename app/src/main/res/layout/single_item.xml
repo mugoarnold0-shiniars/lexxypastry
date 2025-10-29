@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="25dp"
+    android:backgroundTint="#09E9E6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <!--    product name-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_name"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ECF1FF"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_photo"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/images"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_cost"
+            android:text="Ksh:200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#D02323"
+            android:layout_marginLeft="20dp"
+            />
+<!--        Product description-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_description"
+            android:text="It is a good place for morning coffee"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#031FC1"
+            android:layout_marginLeft="20dp"
+            />
+        <!--Purchase Button-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/purchase"
+            android:text="PURCHASE NOW"
+            android:backgroundTint="#D06AE0"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
