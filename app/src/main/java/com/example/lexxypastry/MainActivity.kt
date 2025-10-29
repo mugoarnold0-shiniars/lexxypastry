@@ -40,14 +40,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(signuppage )
        }//end listerner
 
-           // find the text vuew by use of the ID
-        val usernameTextView= findViewById<TextView>(R.id.tvUsername)
-        //get the started username retuned from the API
-        val prefs = getSharedPreferences("user_session",Context.MODE_PRIVATE)
-        val username = prefs.getString("username","user")
 
-        //find the textview
-        usernameTextView.text="Welcome,$username"
 
     }
 }

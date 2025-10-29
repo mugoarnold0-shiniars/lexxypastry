@@ -1,7 +1,12 @@
 package com.example.lexxypastry
 
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ProgressBar
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,6 +36,23 @@ class Dashboard : AppCompatActivity() {
 
 //        We have a function called loadProduct which reQuire three  parameters
         helper.loadProducts(url,recycleview,progressBar)
+
+        // find the text vuew by use of the ID
+        val usernameTextView= findViewById<TextView>(R.id.tvUsername)
+        //get the started username retuned from the API
+        val prefs = getSharedPreferences("user_session", Context.MODE_PRIVATE)
+        val username = prefs.getString("username","user")
+
+        //find the textview
+        usernameTextView.text="Welcome,$username"
+
+//        find the sell button by the use of an ID
+        val buttonSell = findViewById<Button>(R.id.btnSell)
+
+        buttonSell.setOnClickListener {
+            val sellpage = Intent(Intent.ACTION_VIEW,Uri.parse("https://pastry-virid.vercel.app/addproduct"))
+            startActivity(sellpage)
+        }
 
     }
 }
