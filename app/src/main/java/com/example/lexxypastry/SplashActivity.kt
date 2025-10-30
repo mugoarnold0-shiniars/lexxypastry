@@ -21,9 +21,17 @@ class SplashActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val logo = findViewById<ImageView>(R.id.splashImage)
+        val animation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+        logo.startAnimation(animation)
         val splashImage = findViewById<ImageView>(R.id.splashImage)
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
         splashImage.startAnimation(bounceAnimation)
+
+        logo.postDelayed({
+            val fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out)
+            logo.startAnimation(fadeOut)
+        }, 1800)
 
         // Delay for 3 seconds before moving to main activity
         Handler(Looper.getMainLooper()).postDelayed({
