@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#EBF2F2"
     tools:context=".SplashActivity">
 
     <!-- Splash image that will bounce -->
@@ -14,18 +14,27 @@
         android:id="@+id/splashImage"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/splash"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lexxy1"
         android:contentDescription="Splash Image"
         android:scaleType="centerInside" />
 
-    <!-- Optional loading progress bar -->
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
+    <!-- App name text below the logo -->
+    <TextView
+        android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/splashImage"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp" />
+        android:layout_marginTop="24dp"
+        android:text="Lexxy Pastry"
+        android:textColor="#C84E4E"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.08"
+        android:visibility="invisible" />
+ <!-- changed from alpha=0 -->
+
 </RelativeLayout>

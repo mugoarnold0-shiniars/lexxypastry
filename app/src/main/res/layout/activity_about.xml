@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#121110"
+    tools:context=".About">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Info"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#F6F7F8"
+        android:background="@drawable/shape"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to lexxy Pastry where we cater for your needs including pastries. We designed a simple user friendly platform designed to make you to shop at our restraunt easier and more accesible in different parts of the world.Users can easily Sign Up with us to create an account,securely sign In with us and browse  a wide range of pastries With detailed description and images . Our checkout process allows customers to pay through M-Pesa .Created By Arnold Ndegwa ."
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_margin="15dp"
+        android:id="@+id/textView"/>
+    <Button
+        android:id="@+id/speakButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="LISTEN"
+        android:textSize="18sp"
+        android:backgroundTint="#D46A6A"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

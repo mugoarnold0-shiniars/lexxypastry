@@ -31,9 +31,17 @@
             android:layout_height="wrap_content"
             android:text="Join Us!"
             android:gravity="center"
+            android:textSize="44sp"
             android:textStyle="bold"
-            android:textSize="40sp"
-            android:padding="10dp"/>
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFFFF"
+            android:shadowColor="#80000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="6"
+            android:letterSpacing="0.05"
+            android:padding="14dp" />
+
 
         <EditText
             android:layout_width="match_parent"

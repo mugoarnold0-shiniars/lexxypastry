@@ -52,7 +52,19 @@ class Dashboard : AppCompatActivity() {
         buttonSell.setOnClickListener {
             val sellpage = Intent(Intent.ACTION_VIEW,Uri.parse("https://pastry-virid.vercel.app/addproduct"))
             startActivity(sellpage)
+        }//end listener
+        // find the logout button by use of its id
+        val logout = findViewById<Button>(R.id.btnLogout)
+        logout.setOnClickListener {
+            //clear the stored shared Preferences
+            val prefs = getSharedPreferences("user_session", Context.MODE_PRIVATE)
+            prefs.edit().clear().apply()
+
+            //navigate to the first page
+            val firetpage = Intent(applicationContext,MainActivity::class.java)
+            startActivity(firetpage)
         }
+
 
     }
 }

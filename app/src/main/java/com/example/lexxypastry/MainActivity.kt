@@ -1,5 +1,6 @@
 package com.example.lexxypastry
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -13,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(signin)
 
 
-        }
+        }//end listerner
         val signup= findViewById<Button>(R.id.signup)
 
         signup.setOnClickListener {
@@ -39,6 +41,14 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(signuppage )
        }//end listerner
+
+        val about = findViewById<Button>(R.id.btnAbout)
+
+        about.setOnClickListener {
+
+            val Btnabout = Intent(applicationContext,About::class.java)
+            startActivity(Btnabout)
+        }
 
 
 
