@@ -39,7 +39,7 @@ class ProductAdapter(private val productList: List<Product>) :
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val product = productList[position]
         holder.txtName.text = product.product_name
-        holder.txtDesc.text = product.product_description ?: "No description"
+        holder.txtDesc.text = product.product_description  ?: "No description"
         holder.txtPrice.text = "Ksh ${product.product_cost}"
         //Change/Replace modcom2 below to your Python Anywhere username
         val imageUrl = "https://Arnold254.pythonanywhere.com/static/images/${product.product_photo}"

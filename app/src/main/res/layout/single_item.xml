@@ -9,7 +9,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="25dp"
-    android:backgroundTint="#09E9E6">
+    android:backgroundTint="#EBA644">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,55 +20,71 @@
 
         <!--    product name-->
         <TextView
+            android:id="@+id/product_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/product_name"
+            android:layout_marginLeft="20dp"
             android:text="Product Name"
+
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#ECF1FF"
-            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFFFF"
+            android:shadowColor="#80000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="6"
+            android:letterSpacing="0.05"
+            android:padding="14dp"
             />
 
         <ImageView
+            android:id="@+id/product_photo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/product_photo"
             android:layout_marginTop="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/images"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/product_cost"
-            android:text="Ksh:200"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#D02323"
-            android:layout_marginLeft="20dp"
+            android:src="@drawable/images"
+            android:padding="10dp"
+            android:background="@drawable/bg_input"
             />
-<!--        Product description-->
+
         <TextView
+            android:id="@+id/product_cost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/product_description"
-            android:text="It is a good place for morning coffee"
+            android:layout_marginLeft="20dp"
+            android:text="Ksh:200"
+            android:textColor="#9918DE"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#031FC1"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+        <!--        Product description-->
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:text="It is a good place for morning coffee"
+            android:textColor="#EAEAEB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
             />
         <!--Purchase Button-->
         <Button
+            android:id="@+id/purchase"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/purchase"
-            android:text="PURCHASE NOW"
-            android:backgroundTint="#D06AE0"
+            android:layout_marginLeft="45dp"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
             android:layout_marginRight="45dp"
-            android:layout_marginLeft="45dp"/>
+            android:backgroundTint="#C645F2"
+            android:text="BUY NOW"
+            android:textSize="15sp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
 </LinearLayout>
